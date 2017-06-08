@@ -5,6 +5,9 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 
+app.get('/'function(req,res){
+	res.status(200).send({status : 'TimeStampApi'})
+})
 app.get('/:q',function(req,res){
 	
 	var date = req.params.q;
